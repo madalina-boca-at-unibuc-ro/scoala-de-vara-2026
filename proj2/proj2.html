@@ -1,84 +1,208 @@
-
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ro">
 <head>
-  <meta charset="UTF-8">
-  <title>Harta logistica</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fractali și dimensiuni fără număr întreg</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: "Times New Roman", serif;
+            background-color: #DED6D5;
+            background-image: url("cyber2");
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            color: #111;
+        }
+
+        /* Top navigation */
+        .nav {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: stretch;
+            background: #000;
+            border-bottom: 3px solid #777;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .nav li {
+            border-right: 1px solid #777;
+        }
+
+        .nav li:last-child {
+            border-right: none;
+        }
+
+        .nav a {
+            display: block;
+            color: #fff;
+            text-decoration: none;
+            padding: 14px 28px;
+            font-size: 18px;
+        }
+
+        .nav a:hover {
+            background: #666;
+            color: #000;
+        }
+
+        /* Main page box */
+        .content {
+            max-width: 900px;
+            margin: 30px auto;
+            padding: 25px 35px;
+            background: rgba(255, 255, 255, 0.88);
+            border: 1px solid rgba(0, 0, 0, 0.15);
+            border-radius: 12px;
+            box-shadow: 0 4px 18px rgba(0, 0, 0, 0.12);
+        }
+
+        .title {
+            text-align: center;
+            font-size: 34px;
+            margin: 0 0 25px 0;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+            margin: 14px 0;
+        }
+
+        ol, ul {
+            font-size: 18px;
+            line-height: 1.6;
+            margin: 14px 0 14px 28px;
+            padding-left: 18px;
+        }
+
+        li {
+            margin: 10px 0;
+        }
+
+        .center {
+            text-align: center;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            vertical-align: middle;
+        }
+    </style>
 </head>
 <body>
-  <h1>Harta logistica</h1>
-  <p><a href="../index.html">Back to Home</a></p>
+    <ul class="nav">
+        <li><a href="../proj1/proj1.html">Capitolul 1</a></li>
+        <li><a href="../proj2/proj2.html">Capitolul 2</a></li>
+        <li><a href="../proj3/proj3.html">Capitolul 3</a></li>
+        <li><a href="../proj4/proj4.html">Capitolul 4</a></li>
+    </ul>
 
-  <h1>fractalii și dimensiunile fără număr întreg.</h1>
+    <p class="center">
+        <a href="../index.html">Înapoi la pagina principală</a>
+    </p>
+    
+    <div class="content">
+        <h1 class="title">Fractali și dimensiuni fără număr întreg</h1>
 
-  
-<p>În mod obișnuit, suntem obișnuiți cu dimensiuni întregi. Un punct are dimensiunea 0, o linie are dimensiunea 1, o suprafață are dimensiunea 2, iar un corp din spațiu are dimensiunea 3.
-<br>
-Totuși, în natură există forme care nu se comportă exact ca o linie, dar nici ca o suprafață. Aceste forme sunt numite fractali și pot avea dimensiuni fracționare, adică dimensiuni cu virgulă.
-<br><br>
-Ce sunt fractalii?
-<br><br>
-Un fractal este o figură geometrică formată din părți mai mici care seamănă cu întregul. Această proprietate se numește autosimilaritate.
-<br>
-Cu alte cuvinte, dacă mărim o porțiune din fractal, observăm că ea are aproximativ aceeași formă ca figura completă.
-<br>
-Fractalii apar atât în matematică, cât și în natură. Exemple sunt fulgii de zăpadă, liniile de coastă, ramurile copacilor sau vasele de sânge.
-<br><br>
-Covorul lui Sierpinski
-<br><br>
-Un exemplu celebru de fractal este Covorul lui Sierpinski.
-<br>
-Construcția lui este simplă:
-<br><br>
-1. Pornim de la un pătrat.<br>
-2. Îl împărțim în 9 pătrate egale.<br>
-3. Eliminăm pătratul din centru.<br>
-4. Repetăm același proces pentru fiecare dintre cele 8 pătrate rămase.<br><br>
+        <p>
+            În mod obișnuit, suntem obișnuiți cu dimensiuni întregi. Un punct are dimensiunea 0, o linie are dimensiunea 1, o suprafață are dimensiunea 2, iar un corp din spațiu are dimensiunea 3.
+            Totuși, în natură există forme care nu se comportă exact ca o linie, dar nici ca o suprafață. Aceste forme sunt numite fractali și pot avea dimensiuni fracționare, adică dimensiuni cu virgulă.
+        </p>
 
-Dacă repetăm procesul de foarte multe ori, obținem o figură plină de goluri, dar care păstrează aceeași structură la orice scară.<br>
+        <ol>
+            <li><strong>Ce sunt fractalii?</strong></li>
+        </ol>
 
-Covorul lui Sierpinski nu este nici o suprafață obișnuită și nici o simplă linie. Din acest motiv, dimensiunea sa nu este un număr întreg.<br><br>
+        <p>
+            Un fractal este o figură geometrică formată din părți mai mici care seamănă cu întregul. Această proprietate se numește autosimilaritate.
+            Cu alte cuvinte, dacă mărim o porțiune din fractal, observăm că ea are aproximativ aceeași formă ca figura completă.
+            Fractalii apar atât în matematică, cât și în natură. Exemple sunt fulgii de zăpadă, liniile de coastă, ramurile copacilor sau vasele de sânge.
+        </p>
 
-Dimensiunea Hausdorff<br><br>
+        <ol>
+            <li><strong>Covorul lui Sierpinski</strong></li>
+        </ol>
 
-Pentru a descrie astfel de obiecte, matematicienii au introdus conceptul de dimensiune Hausdorff, numită după matematicianul Felix Hausdorff.<br>
+        <p>
+            Un exemplu celebru de fractal este Covorul lui Sierpinski. Construcția lui este simplă:
+        </p>
 
-Această dimensiune măsoară cât de complex ocupă spațiul un obiect.<br><br>
+        <ul>
+            <li>Pornim de la un pătrat.</li>
+            <li>Îl împărțim în 9 pătrate egale.</li>
+            <li>Eliminăm pătratul din centru.</li>
+            <li>Repetăm același proces pentru fiecare dintre cele 8 pătrate rămase.</li>
+        </ul>
 
-La figurile obișnuite obținem valori întregi:<br><br>
+        <p>
+            Dacă repetăm procesul de foarte multe ori, obținem o figură plină de goluri, dar care păstrează aceeași structură la orice scară.
+            Covorul lui Sierpinski nu este nici o suprafață obișnuită și nici o simplă linie. Din acest motiv, dimensiunea sa nu este un număr întreg.
+        </p>
 
-* punct → 0;<br>
-* linie → 1;<br>
-* pătrat → 2;<br>
-* cub → 3.<br><br>
+        <ol>
+            <li><strong>Dimensiunea Hausdorff</strong></li>
+        </ol>
 
-În schimb, la fractali putem obține valori cu virgulă.<br>
+        <p>
+            Pentru a descrie astfel de obiecte, matematicienii au introdus conceptul de dimensiune Hausdorff, numită după matematicianul Felix Hausdorff.
+            Această dimensiune măsoară cât de complex ocupă spațiul un obiect.
+        </p>
 
-Pentru Covorul lui Sierpinski, dimensiunea Hausdorff este:<br>
+        <p>La figurile obișnuite obținem valori întregi:</p>
 
-D = log(8) / log(3) ≈ 1,89<br>
+        <ul>
+            <li>Punct → 0</li>
+            <li>Linie → 1</li>
+            <li>Pătrat → 2</li>
+            <li>Cub → 3</li>
+        </ul>
 
-Acest rezultat înseamnă că figura este mai complexă decât o linie, care are dimensiunea 1, dar nu umple complet o suprafață, care are dimensiunea 2.<br>
+        <p>
+            În schimb, la fractali putem obține valori cu virgulă. Pentru Covorul lui Sierpinski, dimensiunea Hausdorff este:
+            D = log(8) / log(3) ≈ 1,89
+        </p>
 
-De aceea spunem că are o dimensiune fracționară.<br><br>
+        <p>
+            Acest rezultat înseamnă că figura este mai complexă decât o linie, care are dimensiunea 1, dar nu umple complet o suprafață, care are dimensiunea 2.
+            De aceea spunem că are o dimensiune fracționară.
+        </p>
 
-De ce sunt importante dimensiunile cu virgulă?<br><br>
+        <ol>
+            <li><strong>De ce sunt importante dimensiunile cu virgulă?</strong></li>
+        </ol>
 
-Dimensiunile fracționare ne ajută să descriem obiecte foarte neregulate, care nu pot fi încadrate în geometria clasică.<br><br>
+        <p>
+            Dimensiunile fracționare ne ajută să descriem obiecte foarte neregulate, care nu pot fi încadrate în geometria clasică.
+        </p>
 
-Ele sunt folosite în:<br>
+        <p>Ele sunt folosite în:</p>
 
-* matematică;<br>
-* fizică;<br>
-* informatică;<br>
-* studiul fenomenelor naturale.<br><br>
+        <ul>
+            <li>Matematică</li>
+            <li>Fizică</li>
+            <li>Informatică</li>
+            <li>Studiul fenomenelor naturale</li>
+        </ul>
 
-De exemplu, forma unui nor, a unui fulger sau a unei linii de coastă poate fi analizată cu ajutorul fractalilor.<br><br>
+        <p>
+            De exemplu, forma unui nor, a unui fulger sau a unei linii de coastă poate fi analizată cu ajutorul fractalilor.
+        </p>
 
-Concluzie<br><br>
+        <ol>
+            <li><strong>Concluzie</strong></li>
+        </ol>
 
-În concluzie, fractalii sunt structuri autosimilare care pot avea dimensiuni fără număr întreg. Un exemplu cunoscut este Covorul lui Sierpinski, iar complexitatea sa poate fi descrisă prin dimensiunea Hausdorff, aproximativ 1,89.
-<br>
-Aceste idei ne arată că lumea nu este alcătuită doar din forme geometrice perfecte și că uneori avem nevoie de dimensiuni cu virgulă pentru a descrie mai bine realitatea.</p>
+        <p>
+            În concluzie, fractalii sunt structuri autosimilare care pot avea dimensiuni fără număr întreg. Un exemplu cunoscut este Covorul lui Sierpinski, iar complexitatea sa poate fi descrisă prin dimensiunea Hausdorff. Aceste idei ne arată că lumea nu este alcătuită doar din forme geometrice perfecte și că uneori avem nevoie de dimensiuni cu virgulă pentru a descrie mai bine realitatea.
+        </p>
+    </div>
 </body>
 </html>
