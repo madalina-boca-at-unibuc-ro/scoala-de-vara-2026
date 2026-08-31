@@ -1,93 +1,89 @@
 <!DOCTYPE html>
 <html lang="ro">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>De la efectul de fluture la pisica lui Schrodinger</title>
-
     <style>
         body {
             margin: 0;
+            font-family: "Times New Roman", serif;
             background-color: #DED6D5;
-            background-image: url('cyber2');
+            background-image: url("cyber2");
             background-repeat: no-repeat;
             background-attachment: fixed;
             background-size: cover;
-            font-family: 'Times New Roman', serif;
-            color: #000;
+            color: #111;
         }
 
-        h1, h3 {
-            text-align: center;
-            font-family: 'Times New Roman', serif;
-            margin: 0.5em 0;
-        }
-
-        /* Navigation bar only */
+        /* Top navigation */
         .nav {
             list-style: none;
             margin: 0;
             padding: 0;
-            background-color: black;
             display: flex;
             justify-content: center;
-            border: 3.5px solid gray;
+            align-items: stretch;
+            background: #000;
+            border-bottom: 3px solid #777;
             position: sticky;
             top: 0;
             z-index: 1000;
         }
 
         .nav li {
-            border-right: 2px solid gray;
+            border-right: 1px solid #777;
         }
 
         .nav li:last-child {
             border-right: none;
         }
 
-        .nav li a {
+        .nav a {
             display: block;
-            color: white;
-            text-align: center;
-            padding: 15px 60px;
+            color: #fff;
             text-decoration: none;
-            font-family: 'Times New Roman', serif;
+            padding: 14px 28px;
+            font-size: 18px;
         }
 
-        .nav li a:hover {
-            background-color: gray;
-            color: black;
+        .nav a:hover {
+            background: #666;
+            color: #000;
         }
 
-        /* Content area */
+        /* Main page box */
         .content {
-            max-width: 1000px;
+            max-width: 900px;
             margin: 30px auto;
-            padding: 20px 30px;
-            background: rgba(255, 255, 255, 0.75);
-            border-radius: 10px;
+            padding: 25px 35px;
+            background: rgba(255, 255, 255, 0.88);
+            border: 1px solid rgba(0, 0, 0, 0.15);
+            border-radius: 12px;
+            box-shadow: 0 4px 18px rgba(0, 0, 0, 0.12);
         }
 
-        .content h1 {
-            font-size: 2rem;
-            margin-bottom: 1rem;
+        .title {
+            text-align: center;
+            font-size: 34px;
+            margin: 0 0 25px 0;
         }
 
-        .content p {
+        p {
+            font-size: 18px;
             line-height: 1.6;
-            margin: 0.8em 0;
-            font-size: 1.1rem;
+            margin: 14px 0;
         }
 
-        .content ol,
-        .content ul:not(.nav) {
-            margin-left: 2rem;
-            padding-left: 1rem;
-            list-style-position: outside;
+        ol, ul {
+            font-size: 18px;
+            line-height: 1.6;
+            margin: 14px 0 14px 28px;
+            padding-left: 18px;
         }
 
-        .content li {
-            margin: 0.5em 0;
+        li {
+            margin: 10px 0;
         }
 
         .center {
@@ -95,13 +91,12 @@
         }
 
         img {
-            vertical-align: middle;
             max-width: 100%;
             height: auto;
+            vertical-align: middle;
         }
     </style>
 </head>
-
 <body>
     <ul class="nav">
         <li><a href="../proj1/proj1.html">Capitolul 1</a></li>
@@ -111,9 +106,7 @@
     </ul>
 
     <div class="content">
-        <h1>Harta Logistica</h1>
-
-        <p class="center"><br /><br /></p>
+        <h1 class="title">Harta Logistica</h1>
 
         <p>
             Aplicația logistică este un exemplu clasic din matematică și fizică care
@@ -127,20 +120,20 @@
 
         <p class="center">
             Pornim de la o ecuație simplă de forma:
-            <br />
-            <img src="Harta%20Logistica_html_c311d05d.gif" alt="Ecuația logistică" />
+            <br>
+            <img src="Harta%20Logistica_html_c311d05d.gif" alt="Ecuația logistică">
         </p>
 
         <p>Unde:</p>
 
         <ul>
             <li>
-                <img src="Harta%20Logistica_html_7e37b1cf.gif" alt="x sub n" />
+                <img src="Harta%20Logistica_html_7e37b1cf.gif" alt="x sub n">
                 reprezintă starea la un moment dat (de exemplu, populația de animale
                 dintr-un ecosistem într-un anumit an, exprimată ca un procent între 0 și 1).
             </li>
             <li>
-                <img src="Harta%20Logistica_html_583a290d.gif" alt="r" />
+                <img src="Harta%20Logistica_html_583a290d.gif" alt="r">
                 este rată de creștere (sau <em>potențialul biotic</em>).
             </li>
         </ul>
@@ -148,15 +141,15 @@
         <p>De asemenea, se va lua și o ecuație de forma:</p>
 
         <p class="center">
-            <img src="Harta%20Logistica_html_f0281b4f.gif" alt="Formula logistică" />
+            <img src="Harta%20Logistica_html_f0281b4f.gif" alt="Formula logistică">
         </p>
 
         <ul>
             <li>
                 Mesajul simplu al formulei este: populația crește în funcție de numărul
-                actual (<img src="Harta%20Logistica_html_7e37b1cf.gif" alt="x sub n" />),
+                actual (<img src="Harta%20Logistica_html_7e37b1cf.gif" alt="x sub n">),
                 dar este frânată când se apropie de resursa maximă
-                (<img src="Harta%20Logistica_html_83d80cfb.gif" alt="1 minus x sub n" />).
+                (<img src="Harta%20Logistica_html_83d80cfb.gif" alt="1 minus x sub n">).
             </li>
         </ul>
 
@@ -164,7 +157,7 @@
 
         <ul>
             <li>
-                În tanii 1940, matematicianul <strong>John von Neumann</strong>
+                În anii 1940, matematicianul <strong>John von Neumann</strong>
                 a sugerat folosirea acestei formule ca generator de numere aleatorii.
             </li>
             <li>
@@ -176,19 +169,19 @@
 
         <p>
             <strong>3. Ce se întâmplă când schimbi parametrul</strong>
-            <img src="Harta%20Logistica_html_583a290d.gif" alt="r" />
+            <img src="Harta%20Logistica_html_583a290d.gif" alt="r">
             <strong>? (Traseul spre Caos)</strong>
         </p>
 
         <p>
             Comportamentul ecuației depinde complet de valoarea pe care i-o dai lui
-            <img src="Harta%20Logistica_html_583a290d.gif" alt="r" />
+            <img src="Harta%20Logistica_html_583a290d.gif" alt="r">
             (care trebuie să fie între 0 și 4):
         </p>
 
         <ul>
             <li>
-                <img src="Harta%20Logistica_html_583a290d.gif" alt="r" />
+                <img src="Harta%20Logistica_html_583a290d.gif" alt="r">
                 <strong>mic sub 3):</strong>
                 Populația se stabilizează într-o singură valoare fixă (<em>punct fix</em>).
             </li>
@@ -196,5 +189,3 @@
     </div>
 </body>
 </html>
-
-
