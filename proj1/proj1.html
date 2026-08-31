@@ -1,142 +1,200 @@
 <!DOCTYPE html>
-<html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>De la efectul de fluture la pisica lui Schrodinger</title>
 
-   
-    <head>
-        <title>De la efectul de fluture la pisica lui Schrodinger</title>
-        <style>
-            h1{text-align: center;
-              font-family: 'times new roman', serif;}
-            h3{
-                text-align: center;
-                font-family: 'timed new roman', serif;
-            }
-            .nav{list-style-type: none;
-            margin:0;
-            padding:0;
-            background-color:black;
-                display:flex;
-                justify-content:center;
-                border:3.5px solid gray;
-                position:sticky;
-                top:0;
-            }
-            .nav li{
-                float:left;
-                border-right:2px solid gray;
-            }
-            .nav li a{
-                display: block;
-                color: white;
-                text-align:center;
-                padding: 15px 150px;
-                text-decoration: none;
-                font-family:'times new roman',serif;
-            }
-            .nav li a:hover{
-                background-color:gray;
-                color:black;
-            }
-            body{
-                background-image: url('cyber2');
-                background-repeat:no-repeat;
-                background-attachment: fixed;
-                background-size:cover;
-            }
-        </style>
-    </head>
-    <body style="background-color: #DED6D5">
+    <style>
+        body {
+            margin: 0;
+            background-color: #DED6D5;
+            background-image: url('cyber2');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            font-family: 'Times New Roman', serif;
+            color: #000;
+        }
+
+        h1, h3 {
+            text-align: center;
+            font-family: 'Times New Roman', serif;
+            margin: 0.5em 0;
+        }
+
+        /* Navigation bar only */
+        .nav {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            border: 3.5px solid gray;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .nav li {
+            border-right: 2px solid gray;
+        }
+
+        .nav li:last-child {
+            border-right: none;
+        }
+
+        .nav li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 15px 60px;
+            text-decoration: none;
+            font-family: 'Times New Roman', serif;
+        }
+
+        .nav li a:hover {
+            background-color: gray;
+            color: black;
+        }
+
+        /* Content area */
+        .content {
+            max-width: 1000px;
+            margin: 30px auto;
+            padding: 20px 30px;
+            background: rgba(255, 255, 255, 0.75);
+            border-radius: 10px;
+        }
+
+        .content h1 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .content p {
+            line-height: 1.6;
+            margin: 0.8em 0;
+            font-size: 1.1rem;
+        }
+
+        .content ol,
+        .content ul:not(.nav) {
+            margin-left: 2rem;
+            padding-left: 1rem;
+            list-style-position: outside;
+        }
+
+        .content li {
+            margin: 0.5em 0;
+        }
+
+        .center {
+            text-align: center;
+        }
+
+        img {
+            vertical-align: middle;
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <ul class="nav">
+        <li><a href="../proj1/proj1.html">Capitolul 1</a></li>
+        <li><a href="../proj2/proj2.html">Capitolul 2</a></li>
+        <li><a href="../proj3/proj3.html">Capitolul 3</a></li>
+        <li><a href="../proj4/proj4.html">Capitolul 4</a></li>
+    </ul>
+
+    <div class="content">
+        <h1>Harta Logistica</h1>
+
+        <p class="center"><br /><br /></p>
+
+        <p>
+            Aplicația logistică este un exemplu clasic din matematică și fizică care
+            arată cum o ecuație extrem de simplă poate genera un comportament
+            extrem de complex și imprevizibil, numit HAOS.
+        </p>
+
+        <ol>
+            <li><strong>De la ce pleacă totul?</strong></li>
+        </ol>
+
+        <p class="center">
+            Pornim de la o ecuație simplă de forma:
+            <br />
+            <img src="Harta%20Logistica_html_c311d05d.gif" alt="Ecuația logistică" />
+        </p>
+
+        <p>Unde:</p>
+
         <ul>
-            <li><a href="../proj1/proj1.html">Capitolul 1</a></li>
-            <li><a href="../proj2/proj2.html">Capitolul 2</a></li>
-            <li><a href="../proj3/proj3.html">Capitolul 3</a></li>
-            <li><a href="../proj4/proj4.html">Capitolul 4</a></li>
+            <li>
+                <img src="Harta%20Logistica_html_7e37b1cf.gif" alt="x sub n" />
+                reprezintă starea la un moment dat (de exemplu, populația de animale
+                dintr-un ecosistem într-un anumit an, exprimată ca un procent între 0 și 1).
+            </li>
+            <li>
+                <img src="Harta%20Logistica_html_583a290d.gif" alt="r" />
+                este rată de creștere (sau <em>potențialul biotic</em>).
+            </li>
         </ul>
 
-<font face="Times New Roman, serif"><font size="5" style="font-size: 20pt"><span lang="en-US">Harta
-Logistica</span></font></font></p>
-<p lang="en-US" align="center" style="margin-bottom: 0.11in; line-height: 108%">
-<br/>
-<br/>
+        <p>De asemenea, se va lua și o ecuație de forma:</p>
 
-</p>
-	
-<p style="line-height: 108%; margin-bottom: 0.11in"><font face="Times New Roman, serif"><font size="3" style="font-size: 12pt">Aplicația
-logistică este un exemplu clasic din matematică și fizică care
-arată cum o ecuație extrem de simplă poate genera un comportament
-extrem de complex și imprevizibil, numit HAOS.</font></font></p>
-<ol>
-	<li><p style="line-height: 108%; margin-bottom: 0.11in"><font face="Times New Roman, serif"><font size="3" style="font-size: 12pt"><b>De
-	la ce pleacă totul?</b></font></font></p></li>
-</ol>
-<p align="center" style="line-height: 108%; margin-bottom: 0.11in; margin-left: 0.25in">
-<font face="Times New Roman, serif"><font size="3" style="font-size: 12pt">Pornim
-de la o ecuație simplă de forma:</font></font><font face="Cambria Math, serif"><font size="3" style="font-size: 12pt"><br/>
-</font></font><img src="Harta%20Logistica_html_c311d05d.gif" name="Object1" align="absmiddle"/>
-</p>
-<p style="line-height: 108%; margin-bottom: 0.11in; margin-left: 0.5in">
-<font face="Cambria Math, serif"><font size="3" style="font-size: 12pt">Unde:</font></font></p>
-<ul>
-	<li><p style="line-height: 108%; margin-bottom: 0.11in"> 
-	<img src="Harta%20Logistica_html_7e37b1cf.gif" name="Object2" align="absmiddle"/>
+        <p class="center">
+            <img src="Harta%20Logistica_html_f0281b4f.gif" alt="Formula logistică" />
+        </p>
 
-	<font face="Times New Roman, serif"><font size="3" style="font-size: 12pt">reprezintă
-	starea la un moment dat (de exemplu, populația de animale dintr-un
-ecosistem într-un anumit an, exprimată ca un procent între 0 și
-1).</font></font></p></li>
-	<li><p style="line-height: 108%; margin-bottom: 0.11in"><img src="Harta%20Logistica_html_583a290d.gif" name="Object3" align="absmiddle"/>
+        <ul>
+            <li>
+                Mesajul simplu al formulei este: populația crește în funcție de numărul
+                actual (<img src="Harta%20Logistica_html_7e37b1cf.gif" alt="x sub n" />),
+                dar este frânată când se apropie de resursa maximă
+                (<img src="Harta%20Logistica_html_83d80cfb.gif" alt="1 minus x sub n" />).
+            </li>
+        </ul>
 
-	<font face="Times New Roman, serif"><font size="3" style="font-size: 12pt">este
-	rată de creștere (sau </font></font><font face="Times New Roman, serif"><font size="3" style="font-size: 12pt"><i>potențialul
-biotic</i></font></font><font face="Times New Roman, serif"><font size="3" style="font-size: 12pt">).</font></font></p></li>
-</ul>
-<p style="margin-bottom: 0.11in; line-height: 108%; margin-left: 0.25in">
-<br/>
-<br/>
+        <p><strong>2. Istoric scurt</strong></p>
 
-</p>
-<p style="line-height: 108%; margin-bottom: 0.11in"><font face="Cambria Math, serif"><font size="3" style="font-size: 12pt"><span lang="en-US">De
-asemenea, se va lua și o ecuație de forma:</span></font></font></p>
-<p align="center" style="line-height: 108%; margin-bottom: 0.11in"><img src="Harta%20Logistica_html_f0281b4f.gif" name="Object4" align="absmiddle"/>
-</p>
-<ul>
-	<li><p style="line-height: 108%; margin-bottom: 0.11in"><font face="Times New Roman, serif"><font size="3" style="font-size: 12pt">Mesajul
-	simplu al formulei este: populația crește în funcție de numărul
-actual (</font></font><img src="Harta%20Logistica_html_7e37b1cf.gif" name="Object5" align="absmiddle"/>
-<font face="Times New Roman, serif"><font size="3" style="font-size: 12pt">),
-	dar este frânată când se apropie de resursa maximă (</font></font><img src="Harta%20Logistica_html_83d80cfb.gif" name="Object6" align="absmiddle"/>
-<font face="Times New Roman, serif"><font size="3" style="font-size: 12pt">).</font></font></p></li>
-</ul>
-<p style="line-height: 108%; margin-bottom: 0.11in"><font face="Times New Roman, serif"><font size="3" style="font-size: 12pt"><b>2.
-Istoric scurt</b></font></font></p>
-<ul>
-	<li><p style="line-height: 108%; margin-bottom: 0.11in"><font face="Times New Roman, serif"><font size="3" style="font-size: 12pt">În
-	tanii 1940, matematicianul </font></font><font face="Times New Roman, serif"><font size="3" style="font-size: 12pt"><b>John
-von Neumann</b></font></font><font face="Times New Roman, serif"><font size="3" style="font-size: 12pt">
-a sugerat folosirea acestei formule ca generator de numere
-aleatorii.</font></font></p></li>
-	<li><p style="line-height: 108%; margin-bottom: 0.11in"><font face="Times New Roman, serif"><font size="3" style="font-size: 12pt">Ulterior,
-cercetători precum W. Ricker, Paul Stein și Stanislaw Ulam au
-demonstrat că sistemul are proprietăți mult mai complexe decât
-un simplu comportament oscilatoriu.</font></font></p></li>
-</ul>
-<p style="line-height: 108%; margin-bottom: 0.11in"><font face="Times New Roman, serif"><font size="3" style="font-size: 12pt"><b>3.
-Ce se întâmplă când schimbi parametrul </b></font></font>
-<img src="Harta%20Logistica_html_583a290d.gif" name="Object7" align="absmiddle"/>
-<font face="Times New Roman, serif"><font size="3" style="font-size: 12pt"><b>?
-(Traseul spre Caos)</b></font></font></p>
-<p style="line-height: 108%; margin-bottom: 0.11in"><font face="Times New Roman, serif"><font size="3" style="font-size: 12pt">Comportamentul
-ecuației depinde complet de valoarea pe care i-o dai lui </font></font>
-<img src="Harta%20Logistica_html_583a290d.gif" name="Object8" align="absmiddle"/>
-<font face="Times New Roman, serif"><font size="3" style="font-size: 12pt">
-(care trebuie să fie între 0 și 4):</font></font></p>
-<ul>
-	<li><p style="line-height: 108%; margin-bottom: 0.11in"><img src="Harta%20Logistica_html_583a290d.gif" name="Object9" align="absmiddle"/>
+        <ul>
+            <li>
+                În tanii 1940, matematicianul <strong>John von Neumann</strong>
+                a sugerat folosirea acestei formule ca generator de numere aleatorii.
+            </li>
+            <li>
+                Ulterior, cercetători precum W. Ricker, Paul Stein și Stanislaw Ulam au
+                demonstrat că sistemul are proprietăți mult mai complexe decât un simplu
+                comportament oscilatoriu.
+            </li>
+        </ul>
 
-	<font face="Times New Roman, serif"><font size="3" style="font-size: 12pt"><b>mic
-	sub 3):</b></font></font><font face="Times New Roman, serif"><font size="3" style="font-size: 12pt">
-Populația se stabilizează într-o singură valoare fixă (</font></font><font face="Times New Roman, serif"><font size="3" style="font-size: 12pt"><i>punct
-fix</i></font></font><font face="Times New Roman, serif"><font size="3" style="font-size: 12pt">).</font></font></p></li>
-</ul>
+        <p>
+            <strong>3. Ce se întâmplă când schimbi parametrul</strong>
+            <img src="Harta%20Logistica_html_583a290d.gif" alt="r" />
+            <strong>? (Traseul spre Caos)</strong>
+        </p>
+
+        <p>
+            Comportamentul ecuației depinde complet de valoarea pe care i-o dai lui
+            <img src="Harta%20Logistica_html_583a290d.gif" alt="r" />
+            (care trebuie să fie între 0 și 4):
+        </p>
+
+        <ul>
+            <li>
+                <img src="Harta%20Logistica_html_583a290d.gif" alt="r" />
+                <strong>mic sub 3):</strong>
+                Populația se stabilizează într-o singură valoare fixă (<em>punct fix</em>).
+            </li>
+        </ul>
+    </div>
 </body>
 </html>
+
+
