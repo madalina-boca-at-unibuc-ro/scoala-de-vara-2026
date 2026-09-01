@@ -1,49 +1,102 @@
 <html>
     <head>
-        <title>De la efectul de fluture la pisica lui Schrodinger</title>
-        <style>
-            h1{text-align: center;
-              font-family: 'times new roman', serif;}
-            h3{
-                text-align: center;
-                font-family: 'timed new roman', serif;
-            }
-            ul{list-style-type: none;
-            margin:0;
-            padding:0;
-            background-color:black;
-                display:flex;
-                justify-content:center;
-                border:3.5px solid gray;
-                position:sticky;
-                top:0;
-                
-            }
-            ul li{
-                float:left;
-                border-right:2px solid gray;
-                
-            }
-            ul li a{
-                display: block;
-                color: white;
-                text-align:center;
-                padding: 15px 150px;
-                text-decoration: none;
-                font-family:'times new roman',serif;
-            }
-            ul li a:hover{
-                background-color:gray;
-                color:black;
-            }
-            body{
-                background-image: url('cyber2');
-                background-repeat:no-repeat;
-                background-attachment: fixed;
-                background-size:cover;
-            }
-        </style>
-    </head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>De la efectul de fluture la pisica lui Schrodinger</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: "Times New Roman", serif;
+            background-color: #DED6D5;
+            background-image: url("cyber2");
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            color: #111;
+        }
+
+        /* Top navigation */
+        .nav {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: stretch;
+            background: #000;
+            border-bottom: 3px solid #777;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .nav li {
+            border-right: 1px solid #777;
+        }
+
+        .nav li:last-child {
+            border-right: none;
+        }
+
+        .nav a {
+            display: block;
+            color: #fff;
+            text-decoration: none;
+            padding: 14px 28px;
+            font-size: 18px;
+        }
+
+        .nav a:hover {
+            background: #666;
+            color: #000;
+        }
+
+        /* Main page box */
+        .content {
+            max-width: 900px;
+            margin: 30px auto;
+            padding: 25px 35px;
+            background: rgba(255, 255, 255, 0.88);
+            border: 1px solid rgba(0, 0, 0, 0.15);
+            border-radius: 12px;
+            box-shadow: 0 4px 18px rgba(0, 0, 0, 0.12);
+        }
+
+        .title {
+            text-align: center;
+            font-size: 34px;
+            margin: 0 0 25px 0;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+            margin: 14px 0;
+        }
+
+        ol, ul {
+            font-size: 18px;
+            line-height: 1.6;
+            margin: 14px 0 14px 28px;
+            padding-left: 18px;
+        }
+
+        li {
+            margin: 10px 0;
+        }
+
+        .center {
+            text-align: center;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            vertical-align: middle;
+        }
+    </style>
+</head>
+
 <body style="background-color: #DED6D5">
     
     <ul>
