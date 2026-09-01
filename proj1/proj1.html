@@ -143,7 +143,7 @@
         <img src="lm2.png" alt="cresterea exponentiala" style="width: 40%; height: auto;">>
         <p>Pentru a stabiliza populatia introducem  o ecuație de forma:</p>
 
-        <p class="center"><i>x<sub>n+1</sub> = rx<sub>n</sub> (1 - x<sub>n</sub>sub>)</i>
+        <p class="center"><i>x<sub>n+1</sub> = rx<sub>n</sub> (1 - x<sub>n</sub>)</i>
         </p>
 
         <ul>
@@ -154,8 +154,8 @@
                 (<i>1-x<sub>n</sub></i>)
             </li>
         </ul>
-        <img src="lm3.png" alt="harta logisica pentru <it>r=2.8</it>" style="width: 40%; height: auto;">>
-        <img src="lm4.png" alt="harta logisica pentru <it>r = 3.2</it>" style = "width: 40%; height: auto;">>
+        <img src="lm3.png" alt="harta logisica pentru <i>r=2.8</i>" style="width: 40%; height: auto;">>
+        <img src="lm4.png" alt="harta logisica pentru <i>r = 3.2</i>" style = "width: 40%; height: auto;">>
         <ul>
             <li>
                pentru <i>r < 3 </i> populatia converge la o valoare fixa indiferent de valoarea initiala. 
@@ -166,7 +166,7 @@
         </ul>
  <ul>
             <li>
-               Analiza stabilitatii: rezolvam ecuatia <it>x = f(x)</it>, respectiv <it>x=f(f(x))</it>, pentru <it>f(x)=rx(1-x)</it>
+               Analiza stabilitatii: rezolvam ecuatia <i>x = f(x)</i>, respectiv <i>x=f(f(x))</i>, pentru <i>f(x)=rx(1-x)</i>
             </li>
  </ul>
         <img src="cobweb_r2.8.gif" alt="Animație Cobweb Plot" width="400">
@@ -195,7 +195,24 @@
         <p>
             Comportamentul ecuației depinde complet de valoarea lui <it>r</it>
             (care trebuie să fie între 0 și 4):
+
+<ul>
+    <li> <i> r</i>mic (sub 3): Populația se stabilizează într-o singură valoare fixă (<i>punct fix</i>).</li>
+     <li> <i>r=3</i>: Are loc prima <b>bifurcație</b>. Populația nu mai are o singură valoare, ci începe să oscileze permanent între 2 valori (un ciclu de 2 pași). </li>
+    <li>Pe măsură ce  <i>r</i>crește <b> peste 3</b>: Numărul de stări posibile se dublează rapid (duplicarea perioadei: 2, 4, 8, 16 stări). </li>
+     <li> <b> Peste r &#8773 3.57</b>: Sistemul intră în regim <b> haotic</b>. Populația variază aparent la întâmplare, fără un model repetitiv simplu. </li>
+</ul>            
         </p>
+
+           <b> Ecuația logistică și Robert May</b>
+Biologul și matematicianul Robert May a contribuit important la dezvoltarea teoriei haosului prin studiul ecuației logistice. El a demonstrat că o ecuație matematică simplă poate genera comportamente foarte complexe, de la stabilitate și oscilații până la haos, în funcție de valoarea unui parametru. Studiile sale au arătat că fenomenele complexe din natură nu necesită întotdeauna modele matematice complicate și au contribuit la dezvoltarea studiului sistemelor dinamice.
+    • Sursă oficială: Nature Journal (May, R. M., 1976. "Simple mathematical models with very complicated dynamics", Nature 261, 459–467).
+
+
+
+3. Efectul fluturelui și sensibilitatea la condițiile inițiale
+Efectul fluturelui reprezintă sensibilitatea unui sistem haotic la condițiile sale inițiale. O diferență foarte mică între două stări inițiale poate duce, după un anumit timp, la rezultate complet diferite. Acest fenomen a fost evidențiat de meteorologul Edward Lorenz și explică de ce unele sisteme, precum atmosfera, sunt dificil de prezis pe termen lung. În cazul vremii, chiar și mici erori ale măsurătorilor inițiale se pot amplifica în timp, ceea ce face imposibilă realizarea unor prognoze cu precizie de 100% pentru perioade foarte lungi.
+    • Sursă oficială: American Meteorological Society (Lorenz, E. N., 1963. "Deterministic Nonperiodic Flow", Journal of the Atmospheric Sciences).
 
 
     </div>
